@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="sesions">
+    <header>
+        <nav>
+            <ul id="navegacion">
+                <li class="mid"><a href=index.html#Presentacion>Home</a></li>
+                <li class="mid"><a href=index.html#About>Sobre el juego</a></li>
+                <li><img id="logo" src="assets/images/logo.png" alt="Logo"></li>
+                <li class="mid"><a href=index.html#noticias>Noticias</a></li>
+                <li class="mid"><a href="extras.html" target="_blank">Extras</a></li>
+                <li class="iconmid"><a href="login.html"><img class="icons" src="assets/images/iconos/usuario.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id = "MainRegister">
+        <section id="fondoRegistro">
+            <h2 id="registro">Registrarse</h2>
+            <form action="login.html" id="formulario">
+                <div id="Email">
+                    <label for="email">Email:*</label>
+                    <input type="text" name="email" id="email" placeholder="Ej: HatsuneMiku@gmail.com">
+                    <label for="" id="ErrorEmail">El email no puede estar vacio</label>
+                </div>
+                <div id="NombreApellido">
+                    <label for="nombre">Nombre y apellido:*</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ej: Pedo Castillo">
+                    <label for="" id="ErrorName">El nombre no puede estar vacio</label>
+                </div>
+                <div id="Usu">
+                    <label for="usuario">Usuario:*</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Ingresa tu usuario">
+                    <label for="" id="ErrorUsuario">El usuario debe contener minimo 8 caracteres</label>
+                </div>
+                <div id="Contra">
+                    <label for="contrasenia" name="contrasenia">Contraseña:*</label>
+                    <input type="password" name="contrasenia" id="contrasenia" placeholder="Ingresa tu contraseña">
+                    <label for="" id="ErrorContrasenia">La contraseña debe contener minimo 8 caracteres</label>
+                </div>
+                    <button type="button" onclick="ValidarRegister()">Ingresar</button>
+            </form>
+            <a class="OpcionesIS" href="login.html">¿Ya tienes cuenta?</a>
+        </section>
+    </main>
+    <footer>
+        <div class="fila">
+            <div class="col">
+                <img src="assets/images/logo2.png" id="logofoot">
+                <p>Este juego está siendo desarrollado por una sola persona, por lo que los tiempos de desarrollo pueden variar. 
+                    Aprecio realmente tu paciencia y apoyo mientras trabajo arduamente para ofrecerte una experiencia de juego increíble.
+                </p>
+            </div>
+            <div class="col">                
+                <ul id="plataformasfooter">
+                    <li class="plataformas"><h5>Plataformas</h5></li>
+                    <li class="plataformas"><a class="Tf" href="">Steam</a></li>
+                    <li class="plataformas"><a class="Tf" href="">Epic Games</a></li>
+                    <li class="plataformas"><a class="Tf" href="">Itch.io</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Contacto</h5>
+                <form id="contacto">
+                    <img class="iconemail" src="assets/images/iconos/envelope.png" alt="">
+                    <input type="email" id="emailfooter" placeholder="Ingresa tu correo">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="col">
+                <ul id="colredes">
+                    <li class="redes"><h5>Redes</h5></li>
+                    <li class="redes"><a class="linkRed" target="_blank" href="https://www.instagram.com/firearmshowdownfactor/"><img class="icons" src="assets/images/iconos/instagram.png" alt=""></a></li>
+                    <li class="redes"><a class="linkRed" target="_blank" href="https://x.com/FirearmSFactor"><img class="icons" src="assets/images/iconos/twitter-alt.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="copyright">
+            <p><a class="TC" href="">Términos de Servicio</a> / <a class="TC" href="">Política de Privacidad</a> / <a class="TC" href="">Legal</a></p>
+            <p>© Todo el contenido, marcas, nombres y logotipos de terceros se usan con licencia y son propiedad de sus respectivos dueños. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
