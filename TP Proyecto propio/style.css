@@ -248,6 +248,8 @@ h6 {
 }
 
 .tarjeta {
+    width: 40%;
+    height: 40%;
 	border-radius: 10px;
 	position: relative;
 	overflow: hidden;
