@@ -440,7 +440,7 @@ input{
     padding-left: 10%;
 }
 
-button{
+#BotonLR{
     width: 70%;
     margin-top: 6%;
     margin-bottom: 3%;
@@ -564,6 +564,7 @@ button{
   align-items: center;
   padding:25px;
   min-height: 100vh;
+  max-width: 300vh;
   background-image: url(assets/images/fondo.png);
   background-size: cover;
   background-position: center;
@@ -573,7 +574,7 @@ button{
 
 .container form{
   padding:20px;
-  width:700px;
+  width: 700px;
   background: #00000091;
   box-shadow: 0 5px 10px rgba(0,0,0,.1);
 }
@@ -607,8 +608,8 @@ button{
   text-transform: none;
 }
 
-input, select{
-  color: black;
+input, label{
+  color: rgb(255, 255, 255);
 }
 
 .container form .row .col2 .SystemPayment input:focus{
@@ -631,7 +632,7 @@ input, select{
   filter: drop-shadow(0 0 1px #000);
 }
 
-.container form button{
+.container form #BotonPago{
   width: 100%;
   padding:12px;
   font-size: 17px;
@@ -641,6 +642,6 @@ input, select{
   cursor: pointer;
 }
 
-.container form button:hover{
+.container form #BotonPago:hover{
   background: #2ecc71;
 }
