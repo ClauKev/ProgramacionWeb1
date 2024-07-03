@@ -250,6 +250,7 @@ h6 {
     display:flex;
     align-items:center;
     justify-content:center;
+    position: relative;
 	overflow: hidden;
 	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
 }
