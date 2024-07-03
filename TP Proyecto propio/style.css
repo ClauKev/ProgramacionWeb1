@@ -238,15 +238,18 @@ h6 {
 }
 
 .area_noticia{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.tarjeta1 , .tarjeta2, .tarjeta3, .tarjeta4{
+.tarjeta{
 	border-radius: 10px;
-	position: relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 	overflow: hidden;
 	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
 }
@@ -641,27 +644,4 @@ input, label{
 
 .container form #BotonPago:hover{
   background: #2ecc71;
-}
-
-
-/* tarjetas */
-
-.tarjeta1{
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.tarjeta2{
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.tarjeta3{
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.tarjeta4{
-    grid-column: 2;
-    grid-row: 2;
 }
