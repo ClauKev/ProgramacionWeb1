@@ -161,13 +161,6 @@ h6 {
     align-items: center;
 }
 
-.noticias-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-    grid-template-rows: repeat(2, auto); /* 2 filas */
-    gap: 20px; /* Espacio entre las noticias */
-}
-
 #noticias, #About {
     padding-left: 5%;
     width: 80%;
