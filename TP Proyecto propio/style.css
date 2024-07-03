@@ -103,10 +103,6 @@ h6 {
     font-size: 25px;
 }
 
-#contenedorNoticias{
-    padding: 50px 0;
-}
-
 #navegacion {
     list-style: none;
     display: flex;
@@ -157,7 +153,8 @@ h6 {
 }
 
 #ContenedorDeNoticias {
-    overflow: auto;
+    padding: 50px 0;
+    overflow: hidden;
     background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: center;
