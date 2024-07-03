@@ -479,7 +479,7 @@ button{
     justify-content: center;
 }
 
-#ErrorUsuario , #ErrorContrasenia,  #ErrorEmail , #ErrorName {
+#ErrorUsuario , #ErrorContrasenia,  #ErrorEmail , #ErrorName , #ErrorDireccion, #ErrorCiudad, #ErrorCodigop, #ErrorTitular, #ErrorNt, #ErrorFdC, #ErrorCdS  {
     color: red;
     font-size: 13px;
     display: none;
@@ -556,4 +556,91 @@ button{
     position: relative;
 }
 
+/* Sistema de compra */
 
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background-image: url(assets/images/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: auto;
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #00000091;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col2{
+  flex:250px;
+}
+
+.container form .row .col2 .title{
+  font-size: 20px;
+  color:#ffffff;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col2 .SystemPayment{
+  margin:15px 0;
+}
+
+.container form .row .col2 .SystemPayment input, select{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+input, select{
+  color: black;
+}
+
+.container form .row .col2 .SystemPayment input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col2 .flex{
+  display: flex;
+  align-items: center;
+  gap:15px;
+}
+
+.container form .row .col2 .flex .SystemPayment{
+  margin-top: 5px;
+}
+
+.container form .row .col2 .SystemPayment img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form button{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form button:hover{
+  background: #2ecc71;
+}
